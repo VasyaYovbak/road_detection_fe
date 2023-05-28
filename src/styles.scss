@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.minecraft-button {
+  text-align: center;
+  font-family: 'VT323', monospace;
+  color: white;
+  cursor: pointer;
+  background: url('assets/images/minecraft/btn1.png') no-repeat left/cover;
+  padding-top: 6px;
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.minecraft-button:hover {
+  background: url('assets/images/minecraft/btn2.png') no-repeat left/cover;
+}
+
+.minecraft-button:disabled{
+  background: url('assets/images/minecraft/btn1.png') no-repeat left/cover;
+  opacity: 0.6;
+  cursor: auto;
+}
+
+.minecraft-button:disabled:hover{
+  background: url('assets/images/minecraft/btn1.png') no-repeat left/cover;
+  opacity: 0.6;
+  cursor: auto;
+}

@@ -1,0 +1,70 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.video-intro {
+  width: 100vw;
+}
+
+.video-intro.blurred {
+  transition: ease-in filter 1.5s;
+  filter: blur(4px) brightness(25%);
+}
+
+.minecraft-menu {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'VT323', monospace;
+  color: white;
+
+  .die-label {
+    font-size: 96px;
+    margin: 100px 0;
+  }
+
+  .score-label {
+    font-size: 40px;
+    margin-bottom: 200px;
+
+    .score {
+      color: yellow;
+    }
+  }
+
+  .minecraft-button{
+    height: 84px;
+    width: 804px;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    color: white;
+    cursor: pointer;
+    background: url('../../assets/images/minecraft/btn1.png') no-repeat left/cover;
+    padding-top: 6px;
+    margin: 20px 0;
+    font-size: 40px;
+  }
+
+  .minecraft-button:hover{
+    height: 80px;
+    width: 800px;
+    background: url('../../assets/images/minecraft/btn2.png') no-repeat left/cover;
+  }
+
+}
+
+.minecraft-menu.show{
+  opacity: 1;
+  transition: ease-in opacity 0.5s;
+}
+
+.into-button{
+  height: 84px;
+  width: 804px;
+}

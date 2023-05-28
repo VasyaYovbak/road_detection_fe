@@ -1,0 +1,22 @@
+<video poster="../../assets/images/preview.png" class="video-intro" #video
+       [class.blurred]="isVideoEnded"
+>
+  <source src="../../assets/videos/intro.mp4" type="video/mp4">
+  <source src="../../assets/videos/intro.webm" type="video/webm">
+</video>
+
+<div class="minecraft-menu" [class.show]="isVideoEnded">
+  <div class="die-label">You died!</div>
+  <div class="score-label">Score: <span class="score">228</span></div>
+
+  <button class="minecraft-button into-button" routerLink="menu">Respawn</button>
+  <button class="minecraft-button into-button" (click)="closeTab()">Lorem ipsum dolor sit</button>
+</div>
+
+
+<audio #dieSound>
+  <source src="../../assets/sounds/mn_die.mp3" type="audio/mp3">
+</audio>
+<audio #mainSound>
+  <source src="../../assets/sounds/mn_main.mp3" type="audio/mp3">
+</audio>

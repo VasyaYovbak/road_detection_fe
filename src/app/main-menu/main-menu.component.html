@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="buttons-container">
+    <div class="button-box">
+      <input type="file" (change)="selectedImage = $any($event.target)?.files[0]" accept="image/*"/>
+      <button class="minecraft-button main-button" (click)="uploadImage()" [disabled]="loading"> Upload image
+        <mat-spinner *ngIf="loading"></mat-spinner>
+      </button>
+    </div>
+    <div class="button-box">
+      <input type="file" (change)="selectedVideo = $any($event.target)?.files[0]" accept="video/*"/>
+      <button class="minecraft-button main-button" (click)="uploadVideo()" [disabled]="loading"> Upload video
+        <mat-spinner *ngIf="loading"></mat-spinner>
+      </button>
+    </div>
+    <div class="button-box">
+      <input type="file" accept="image/*"/>
+      <button class="minecraft-button main-button"> Lorem ipsum dolor sit!</button>
+    </div>
+  </div>
+
+  <ng-container [ngSwitch]="requestType">
+    <ng-container *ngSwitchCase="'image'">
+      <ng-container *ngTemplateOutlet="imageResponse"></ng-container>
+    </ng-container>
+    <ng-container *ngSwitchCase="'video'">
+      <ng-container *ngTemplateOutlet="videoResponse"></ng-container>
+    </ng-container>
+  </ng-container>
+
+
+</div>
+
+
+<ng-template #imageResponse>
+  <img [src]="returnedImageUrl" alt="Image" class="result-container">
+</ng-template>
+
+<ng-template #videoResponse>
+  <video controls class="result-container">
+    <source [src]="returnedVideoUrl" type="video/mp4">
+  </video>
+</ng-template>
