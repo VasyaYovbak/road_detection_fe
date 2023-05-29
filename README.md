@@ -8,6 +8,7 @@ This command is used to obtain a repository from an existing URL.
 >     git clone https://github.com/VasyaYovbak/road_detection_fe.git
 # 3. Run the project
 *Recommendation =). It is better to run the backend first*. 
+
 Firstly, you should execute the command in the terminal:
 >    npm install 
 
