@@ -16,7 +16,9 @@ In order to launch the projects, you need to execute this command in the termina
 >    npm run start
 # 4. Features overview
 1. Detect image
+
 ![image](https://github.com/VasyaYovbak/road_detection_fe/assets/90958528/07d90cbe-f9cb-4760-b3bb-0d8a8b98f76a)
 
 2. Detect video
+
 ![image](https://github.com/VasyaYovbak/road_detection_fe/assets/90958528/05844abc-921e-4baa-a7eb-34e5ccfa3e4a)
