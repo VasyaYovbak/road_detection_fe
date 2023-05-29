@@ -10,7 +10,9 @@ This command is used to obtain a repository from an existing URL.
 *Recommendation =). It is better to run the backend first*. 
 Firstly, you should execute the command in the terminal:
 >    npm install 
+
 In order to launch the projects, you need to execute this command in the terminal:
+
 >    npm run start
 # 4. Features overview
 1. Detect image
