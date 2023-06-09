@@ -18,8 +18,8 @@ In order to launch the projects, you need to execute this command in the termina
 # 4. Features overview
 1. Detect image
 
-![image](https://github.com/VasyaYovbak/road_detection_fe/assets/90958528/07d90cbe-f9cb-4760-b3bb-0d8a8b98f76a)
+![image](https://github.com/VasyaYovbak/road_detection_fe/assets/90958528/2d1cb64a-204d-49ee-bd40-fcecbb78918a)
 
 2. Detect video
 
-![image](https://github.com/VasyaYovbak/road_detection_fe/assets/90958528/05844abc-921e-4baa-a7eb-34e5ccfa3e4a)
+![image](https://github.com/VasyaYovbak/road_detection_fe/assets/90958528/e95220ff-fd7e-4801-9c19-082bc537292f)
